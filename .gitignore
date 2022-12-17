@@ -1,0 +1,7 @@
+#archivo de texto
+*.txt
+
+
+
+#archivo node_modules
+node_modules/
