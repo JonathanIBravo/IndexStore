@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.fondo{
+    background-color: rgb(171, 144, 77);
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    font-style: uppercase;
+}
