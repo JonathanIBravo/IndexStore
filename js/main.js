@@ -86,10 +86,11 @@ const comprarProductos = (listaDeProductos) => {
             agregarAlCarrito(producto, producto.id, productoCantidad)
         } else{
             alert ('El producto no se encuentra en el catalogo.')
-        }
+        }  
 
         otroProducto = confirm ('¿Queres agregar otro producto?')
     }while(otroProducto)
+    confirmarCompra()
 };
 
 const agregarAlCarrito = (producto, productoId, productoCantidad) => {
@@ -102,7 +103,53 @@ const agregarAlCarrito = (producto, productoId, productoCantidad) => {
     }
 };
 
+const eliminarPorductoCarrito = (productoAEliminar) => {
+    carrito.forEach((producto, index) => {
+        if (producto.nombre.toLowerCase() === productoAEliminar.toLowerCase()) {
+            if (producto.cantidad > 1) {
+                producto.cantidad --
+            } else {
+                carrito.splice(index, 1)
+            }
+        }
+    })
+    confirmarCompra()
+}
+
+const confirmarCompra = () => {
+    const listaDeProductos = carrito.map(producto => {
+        return '- ' +producto.nombre+ '| Cantidad: '+producto.cantidad
+    })
+    const isConfirmar = confirm('confirmar: '
+    +'\n\n' + listaDeProductos.join ('\n')
+    +'\n\n Para confirmar presione ACEPTAR si no CANCELAR para eliminar producto de carrito'  
+    )
+    if (isConfirmar) {
+        finalizarCompra(listaDeProductos)
+    } else {
+        const productoAEliminar = prompt('Ingrese el nombre del producto que desea eliminar del carrito: ')
+        eliminarPorductoCarrito (productoAEliminar)
+    }
+};
 
 
+const finalizarCompra = (listaDeProductos) => {
+    const cantidadTotal = carrito.reduce((acc, item) => acc + item.cantidad, 0)
+    const precioTotal = carrito.reduce((acc, item) => acc +  (item.cantidad * item.precio), 0)
+    alert ('Detalle de su compra'
+    +'\n\n' +listaDeProductos.join ('\n')
+    +'\n\n Total de productos: ' +cantidadTotal
+    +'\n\n El valor final del carrito es: $' +precioTotal 
+    )
+};
 
-ordenarMenorMayor()
+const comprar = () => {
+    const productosBaratos =confirm ('Queres ordenar la lista del producto de menor valor al mayor valor?')
+    if (productosBaratos) {
+        ordenarMenorMayor () 
+    } else {
+        ordenarMayorMenor()
+    }
+};
+
+comprar()
