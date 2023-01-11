@@ -141,7 +141,36 @@ const finalizarCompra = (listaDeProductos) => {
     +'\n\n Total de productos: ' +cantidadTotal
     +'\n\n El valor final del carrito es: $' +precioTotal 
     )
+
+    const totalConDescuento = calcularDescuento(precioTotal);
+    calcularDeEnvio(totalConDescuento);
 };
+
+const calcularDescuento = (precioTotal) => {
+    let totalConDescuento = 0;
+    if (precioTotal >= 400){
+        totalConDescuento = precioTotal * 0.80; 
+        alert('Tienes un descuento, el precio final es: $'+totalConDescuento);
+        return totalConDescuento; 
+    }else{
+        return precioTotal; 
+    };
+};
+
+const calcularDeEnvio = (precioFianl) => {
+    let envioAdomicilio = confirm ('¿Queres optar por envio a domicilio?');
+
+    if (envioAdomicilio && precioFianl >= 200) {
+        alert('Tenes envio gratis. El total de la compra es $' +precioFianl);
+    } else if (envioAdomicilio && precioFianl < 200 && precioFianl !== 0) {
+        precioFianl += 40;
+        alert('El envio cuesta $40. El total de la compra es $' +precioFianl);
+    } else{
+        alert('El precio total es de $' +precioFianl);
+    }
+    return precioFianl;
+};
+
 
 const comprar = () => {
     const productosBaratos =confirm ('Queres ordenar la lista del producto de menor valor al mayor valor?')
@@ -151,5 +180,4 @@ const comprar = () => {
         ordenarMayorMenor()
     }
 };
-
 comprar()
