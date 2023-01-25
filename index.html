@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>IndexStore: Tienda Online de zapatillas importadas.</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <title>HOME: Tienda Online de zapatillas importadas.</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
     <script src="https://kit.fontawesome.com/564aeee743.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main_header">
@@ -16,9 +20,9 @@
                 <span class=" icon-menu fa-solid fa-bars" id="btn-menu"></span>
                 <nav class="header_nav" id="header_nav">
                     <ul class="menu">
-                        <li class="menu_item"><a href="" class="menu_link">HOME</a></li>
-                        <li class="menu_item"><a href="" class="menu_link">SHOP</a></li>
-                        <li class="menu_item"><a href="" class="menu_link">ABOUT ME</a></li>
+                        <li class="menu_item"><a href="./index.html" class="menu_link">HOME</a></li>
+                        <li class="menu_item"><a href="./pages/shop.html" class="menu_link">SHOP</a></li>
+                        <li class="menu_item"><a href="./pages/aboutme.html" class="menu_link">ABOUT ME</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,35 +31,49 @@
                 <p class="header_ayuda"> <i class="fa-solid fa-phone"></i> Call +512389547093</p>
             </div>
             <div class="header_container">
-                <a href="" class="btn_carrito">Carrito <i class="fas fa-shopping-cart"></i></a>
+                <button id="boton-carrito">Carrito<i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
                 <input type="serch" class="search_input" placeholder="Busca tu producto"><i class="fa-solid fa-magnifying-glass"></i> 
             </div>
         </div>
     </header>
-    <div class="container_slider">
-        <div class="slider" id="slider">
-            <div class="slider_section">
-                <img src="" alt="" class="slider_img">
+    <main class="contenedor-productos" id="contenedor-productos">
+        <section>
+            <div class="container_slider">
+                <div class="slider" id="slider">
+                    <div class="slider_section">
+                        <img src="./public/img/nikeArimax.jpg" alt="Zapatillas" class="slider_img">
+                    </div>
+                    <div class="slider_section">
+                        <img src="./public/img/botitaconvers.jpg" alt="Zapatillas" class="slider_img">
+                    </div>
+                    <div class="slider_section">
+                        <img src="./public/img/nikeJordan.jpg" alt="Zapatillas" class="slider_img">
+                    </div>
+                    <div class="slider_section">
+                        <img src="./public/img/adidas.jpg" alt="Zapatillas" class="slider_img">
+                    </div>
+                    <div class="slider_section">
+                        <img src="./public/img/nike2img.jpg" alt="Zapatillas" class="slider_img">
+                    </div>
+                </div>
+                <div class="slider_btn slider_btn-right" id="btn_right">&#62;</div>
+                <div class="slider_btn slider_btn-left" id="btn_left">&#60;</div>
+            </div> 
+        </section>
+    </main>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
             </div>
-            <div class="slider_section">
-                <img src="" alt="" class="slider_img">
-            </div>
-            <div class="slider_section">
-                <img src="" alt="" class="slider_img">
-            </div>
-            <div class="slider_section">
-                <img src="" alt="" class="slider_img">
-            </div>
-            <div class="slider_section">
-                <img src="" alt="" class="slider_img">
-            </div>
-
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
-
     </div>
-
-
-    <!-- <script src= "./js/stock.js"></script>
-    <script src="./js/main.js"></script> -->
+    <script src="./data/stock.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/app.js"></script>
+    <script src= "./js/slider.js" ></script>
 </body>
 </html>
