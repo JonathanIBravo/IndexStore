@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+.main_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header_titulo{
     text-align: center;
     font-size:50px;
@@ -154,7 +159,7 @@ p {
     font-weight: 700;
 }
 .boton-agregar {
-    background-color: black;
+    background-color: rgb(13, 22, 140);
     color: white;
     font-size: 18px;
     font-weight: 700;
