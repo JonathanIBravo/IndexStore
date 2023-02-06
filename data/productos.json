@@ -1,0 +1,320 @@
+[
+    {
+        "id": "nike-01",
+        "titulo": "Air Force One",
+        "imagen": "../public/img/nike/AireForceOne.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-02",
+        "titulo": "Air Force Mid",
+        "imagen": "../public/img/nike/airforcemid.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-03",
+        "titulo": "Air Max 90",
+        "imagen": "../public/img/nike/airmax90.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-04",
+        "titulo": "Jordan One",
+        "imagen": "../public/img/nike/jordan1.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-05",
+        "titulo": "Jordan Dior",
+        "imagen": "../public/img/nike/jordandior.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-06",
+        "titulo": "Nike Cortez",
+        "imagen": "../public/img/nike/nikecortez.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-07",
+        "titulo": "Air Force One HALLOWEN",
+        "imagen": "../public/img/nike/nikedunkhallowen.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-08",
+        "titulo": "Zoom",
+        "imagen": "../public/img/nike/nikezoom.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-08",
+        "titulo": "Shadow",
+        "imagen": "../public/img/nike/nikeshadowp.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-08",
+        "titulo": "Air Max 97",
+        "imagen": "../public/img/nike/nike97.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "nike-08",
+        "titulo": "Presto",
+        "imagen": "../public/img/nike/nikepresto.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Nike",
+            "id": "nike"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-01",
+        "titulo": "Adidas",
+        "imagen": "../public/img/adidas/adidas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-02",
+        "titulo": "Adidas Falcon",
+        "imagen": "../public/img/adidas/adidasfalcon.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-03",
+        "titulo": "SuperStar",
+        "imagen": "../public/img/adidas/adidassuperstar.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-04",
+        "titulo": "Adidas Trabost",
+        "imagen": "../public/img/adidas/adidasultrabost.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-05",
+        "titulo": "Adidas",
+        "imagen": "../public/img/adidas/adidas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-05",
+        "titulo": "Adidas Breaknet",
+        "imagen": "../public/img/adidas/adidasbreaknet.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "adidas-05",
+        "titulo": "Adidas Ozweego",
+        "imagen": "../public/img/adidas/ADIDASOZWEEGO.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Adidas",
+            "id": "adidas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "converse-01",
+        "titulo": "Converse Botitas White",
+        "imagen": "../public/img/convers/botitaconvers.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Converse",
+            "id": "converse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "converse-02",
+        "titulo": "Converse Clasicas",
+        "imagen": "../public/img/convers/200010557144001-1.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Converse",
+            "id": "converse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "converse-03",
+        "titulo": "Converse Botitas Black",
+        "imagen": "../public/img/convers/conversebotitas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Converse",
+            "id": "converse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "converse-03",
+        "titulo": "Converse Botitas Retro",
+        "imagen": "../public/img/convers/converse01.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Converse",
+            "id": "converse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "converse-03",
+        "titulo": "Converse Botitas Pink",
+        "imagen": "../public/img/convers/converse02.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Converse",
+            "id": "converse"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vanz-01",
+        "titulo": "Vanz Clasicas",
+        "imagen": "../public/img/vanz/vanzclasicas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Vanz",
+            "id": "vanz"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vanz-02",
+        "titulo": "Vanz con Plataforma",
+        "imagen": "../public/img/vanz/vanzconplataforma.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Vanz",
+            "id": "vanz"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vanz-03",
+        "titulo": "Vanz Clasicas",
+        "imagen": "../public/img/vanz/vanzclasicas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Vanz",
+            "id": "vanz"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vanz-03",
+        "titulo": "Vanz Botitas",
+        "imagen": "../public/img/vanz/vanzbotitas.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Vanz",
+            "id": "vanz"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vanz-03",
+        "titulo": "Vanz Negras",
+        "imagen": "../public/img/vanz/vanzmegrasjpg.jpg",
+        "categoria": {
+            "nombre": "Zapatillas Vanz",
+            "id": "vanz"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "newbalance-01",
+        "titulo": "New Balance Urban",
+        "imagen": "../public/img/newbalance/newbalanceurbana.jpg",
+        "categoria": {
+            "nombre": "Zapatillas New Balance",
+            "id": "newbalance"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "newbalance-01",
+        "titulo": "New Balance Urban Gray",
+        "imagen": "../public/img/newbalance/newbalance01.jpg",
+        "categoria": {
+            "nombre": "Zapatillas New Balance",
+            "id": "newbalance"
+        },
+        "precio": 1000
+    },{
+        "id": "newbalance-01",
+        "titulo": "New Balance White ",
+        "imagen": "../public/img/newbalance/newbalance02.jpg",
+        "categoria": {
+            "nombre": "Zapatillas New Balance",
+            "id": "newbalance"
+        },
+        "precio": 1000
+    },{
+        "id": "newbalance-01",
+        "titulo": "New Balance Urban Blue",
+        "imagen": "../public/img/newbalance/newbalance03.jpg",
+        "categoria": {
+            "nombre": "Zapatillas New Balance",
+            "id": "newbalance"
+        },
+        "precio": 1000
+    }
+]
