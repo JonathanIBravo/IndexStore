@@ -74,20 +74,20 @@ function eliminarDelCarrito(e) {
         text: "Producto eliminado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "bottom", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
-        background: "linear-gradient(to right, #4b33a8, #785ce9)",
-        borderRadius: "2rem",
+        background: "linear-gradient(to right, #FF8C00, #DAA520)",
+        borderRadius: ".5rem",
         textTransform: "uppercase",
-        fontSize: ".75rem"
+        fontSize: "1.2rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '1.5rem' 
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
     }).showToast();
     const idBoton = e.target.id; 
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
@@ -95,7 +95,7 @@ function eliminarDelCarrito(e) {
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito();
 
-    localStorage.setItem("producto-en-carrito", JSON.stringify(productosEnCarrito));
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);

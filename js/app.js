@@ -66,6 +66,25 @@ if(productosEnCarritoLS){
 }
 
 function agregarAlCarrito(e){
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "bottom", 
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+            background: "linear-gradient(to right, #FF8C00, #DAA520)",
+            borderRadius: ".5rem",
+            textTransform: "uppercase",
+            fontSize: "1.2rem"
+        },
+        offset: {
+            x: '1.5rem', 
+            y: '1.5rem' 
+        },
+        onClick: function(){} // Callback after click
+    }).showToast(); 
     
     const idBoton = e.target.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);

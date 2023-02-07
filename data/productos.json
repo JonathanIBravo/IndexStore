@@ -7,7 +7,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 1300
     },
     {
         "id": "nike-02",
@@ -17,7 +17,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 1100
     },
     {
         "id": "nike-03",
@@ -47,7 +47,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 900
     },
     {
         "id": "nike-06",
@@ -57,17 +57,17 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 500
     },
     {
         "id": "nike-07",
-        "titulo": "Air Force One HALLOWEN",
+        "titulo": "Air HALLOWEN",
         "imagen": "../public/img/nike/nikedunkhallowen.jpg",
         "categoria": {
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 1500
     },
     {
         "id": "nike-08",
@@ -77,7 +77,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 250
     },
     {
         "id": "nike-08",
@@ -87,7 +87,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 1150
     },
     {
         "id": "nike-08",
@@ -107,7 +107,7 @@
             "nombre": "Zapatillas Nike",
             "id": "nike"
         },
-        "precio": 1000
+        "precio": 700
     },
     {
         "id": "adidas-01",
@@ -117,7 +117,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 600
     },
     {
         "id": "adidas-02",
@@ -127,7 +127,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 650
     },
     {
         "id": "adidas-03",
@@ -137,7 +137,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 600
     },
     {
         "id": "adidas-04",
@@ -147,7 +147,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 550
     },
     {
         "id": "adidas-05",
@@ -157,7 +157,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 500
     },
     {
         "id": "adidas-05",
@@ -167,7 +167,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 470
     },
     {
         "id": "adidas-05",
@@ -177,7 +177,7 @@
             "nombre": "Zapatillas Adidas",
             "id": "adidas"
         },
-        "precio": 1000
+        "precio": 780
     },
     {
         "id": "converse-01",
@@ -187,7 +187,7 @@
             "nombre": "Zapatillas Converse",
             "id": "converse"
         },
-        "precio": 1000
+        "precio": 320
     },
     {
         "id": "converse-02",
@@ -197,7 +197,7 @@
             "nombre": "Zapatillas Converse",
             "id": "converse"
         },
-        "precio": 1000
+        "precio": 310
     },
     {
         "id": "converse-03",
@@ -207,7 +207,7 @@
             "nombre": "Zapatillas Converse",
             "id": "converse"
         },
-        "precio": 1000
+        "precio": 300
     },
     {
         "id": "converse-03",
@@ -217,7 +217,7 @@
             "nombre": "Zapatillas Converse",
             "id": "converse"
         },
-        "precio": 1000
+        "precio": 350
     },
     {
         "id": "converse-03",
@@ -227,7 +227,7 @@
             "nombre": "Zapatillas Converse",
             "id": "converse"
         },
-        "precio": 1000
+        "precio": 200
     },
     {
         "id": "vanz-01",
@@ -237,7 +237,7 @@
             "nombre": "Zapatillas Vanz",
             "id": "vanz"
         },
-        "precio": 1000
+        "precio": 220
     },
     {
         "id": "vanz-02",
@@ -247,7 +247,7 @@
             "nombre": "Zapatillas Vanz",
             "id": "vanz"
         },
-        "precio": 1000
+        "precio": 180
     },
     {
         "id": "vanz-03",
@@ -257,7 +257,7 @@
             "nombre": "Zapatillas Vanz",
             "id": "vanz"
         },
-        "precio": 1000
+        "precio": 210
     },
     {
         "id": "vanz-03",
@@ -267,7 +267,7 @@
             "nombre": "Zapatillas Vanz",
             "id": "vanz"
         },
-        "precio": 1000
+        "precio": 190
     },
     {
         "id": "vanz-03",
@@ -277,7 +277,7 @@
             "nombre": "Zapatillas Vanz",
             "id": "vanz"
         },
-        "precio": 1000
+        "precio": 200
     },
     {
         "id": "newbalance-01",
@@ -287,7 +287,7 @@
             "nombre": "Zapatillas New Balance",
             "id": "newbalance"
         },
-        "precio": 1000
+        "precio": 300
     },
     {
         "id": "newbalance-01",
@@ -297,7 +297,7 @@
             "nombre": "Zapatillas New Balance",
             "id": "newbalance"
         },
-        "precio": 1000
+        "precio": 320
     },{
         "id": "newbalance-01",
         "titulo": "New Balance White ",
@@ -306,7 +306,7 @@
             "nombre": "Zapatillas New Balance",
             "id": "newbalance"
         },
-        "precio": 1000
+        "precio": 330
     },{
         "id": "newbalance-01",
         "titulo": "New Balance Urban Blue",
@@ -315,6 +315,6 @@
             "nombre": "Zapatillas New Balance",
             "id": "newbalance"
         },
-        "precio": 1000
+        "precio": 350
     }
 ]
