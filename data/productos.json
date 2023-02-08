@@ -298,7 +298,8 @@
             "id": "newbalance"
         },
         "precio": 320
-    },{
+    },
+    {
         "id": "newbalance-01",
         "titulo": "New Balance White ",
         "imagen": "../public/img/newbalance/newbalance02.jpg",
@@ -307,7 +308,8 @@
             "id": "newbalance"
         },
         "precio": 330
-    },{
+    },
+    {
         "id": "newbalance-01",
         "titulo": "New Balance Urban Blue",
         "imagen": "../public/img/newbalance/newbalance03.jpg",
