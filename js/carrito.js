@@ -1,6 +1,8 @@
+//Traemos la informacion del local storage
 let productosEnCarrito = localStorage.getItem("productos-en-carrito");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
+//declaraciones 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
@@ -9,6 +11,7 @@ let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
+
 
 function cargarProductosCarrito(){
     if (productosEnCarrito && productosEnCarrito.length > 0){
@@ -33,23 +36,24 @@ function cargarProductosCarrito(){
                 <div class="carrito-producto-cantidad">
                     <small>Cantidad</small>
                     <p>${producto.cantidad}</p>
-                </div>
-                <div class="carrito-producto-precio">
+                    </div>
+                    <div class="carrito-producto-precio">
                     <small>Precio</small>
                     <p>$${producto.precio}</p>
-                </div>
-                <div class="carrito-producto-subtotal">
+                    </div>
+                    <div class="carrito-producto-subtotal">
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
-                </div>
-                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
-            `;
-    
+                    </div>
+                    <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+                    `;
+                    
+                    
             contenedorCarritoProductos.append(div);
         });
         
-        actualizarBotonesEliminar();
-        actualizarTotal();
+    actualizarBotonesEliminar();
+    actualizarTotal();
     } else{
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
@@ -68,7 +72,7 @@ function actualizarBotonesEliminar(){
         boton.addEventListener("click", eliminarDelCarrito);
     });
 }
-
+//Btn para elminiar los productos de mi carrito utlizando Toastify
 function eliminarDelCarrito(e) {
     Toastify({
         text: "Producto eliminado",
@@ -89,15 +93,17 @@ function eliminarDelCarrito(e) {
         },
         onClick: function(){} 
     }).showToast();
-    const idBoton = e.target.id; 
+    
+    const idBoton = e.currentTarget.id; 
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-
     productosEnCarrito.splice(index, 1);
+
     cargarProductosCarrito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
+//Funcion para vaciar el carrito, se utiliza Sweet Alert
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito(){
     Swal.fire({
@@ -122,7 +128,7 @@ function actualizarTotal(){
     total.innerText = `$${totalCalculado}` ;
 }
 
-
+//Funcion y btn para finalizar la comrpa, se utiliza Sweet Alert
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito(){
     Swal.fire({

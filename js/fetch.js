@@ -1,3 +1,5 @@
+// Ruta relativa
+
 let productos = [];
 
 fetch ("../data/productos.json")

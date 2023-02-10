@@ -1,12 +1,15 @@
-const contendeorProducto = document.querySelector("#contenedor-productos");
+const contenedorProducto = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito")
 
+
+
+//Se utiliza forEach para recorrer todos los productos de mi array y mostrarlos en el html
 function cargarProductos(productosElegidos){
 
-    contendeorProducto.innerHTML="";
+    contenedorProducto.innerHTML="";
     
     productosElegidos.forEach(producto => {
 
@@ -21,23 +24,23 @@ function cargarProductos(productosElegidos){
         </div>
         `;
 
-        contendeorProducto.append(div);
+        contenedorProducto.append(div);
     })
     
     actualizarBotonesAgregar();
 }
 
 
-
+// Btn utilizando un forEach para recorrer mi array y traerme todas las categorias
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
-        e.target.classList.add("active");
+        e.currentTarget.classList.add("active");
 
-        if(e.target.id != "todos"){
-            const productoCategoria= productos.find(producto=>producto.categoria.id === e.target.id);
+        if(e.currentTarget.id != "todos"){
+            const productoCategoria= productos.find(producto=>producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerText= productoCategoria.categoria.nombre;
-            const productosBoton = productos.filter(producto => producto.categoria.id === e.target.id)
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id)
             cargarProductos(productosBoton)
         }else{
             tituloPrincipal.innerText= "Todos los productos";
@@ -46,6 +49,7 @@ botonesCategorias.forEach(boton => {
     });
 });
 
+// funcion que cada vez que se agregen productos nuevos, se actualice mi carrito
 function actualizarBotonesAgregar(){
     botonesAgregar = document.querySelectorAll(".producto-agregar");
 
@@ -65,6 +69,8 @@ if(productosEnCarritoLS){
     productosEnCarrito = [];
 }
 
+//Boton agregar producto al carrito, complementando con la libreria Toastify
+
 function agregarAlCarrito(e){
     Toastify({
         text: "Producto agregado",
@@ -83,10 +89,10 @@ function agregarAlCarrito(e){
             x: '1.5rem', 
             y: '1.5rem' 
         },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
     }).showToast(); 
     
-    const idBoton = e.target.id;
+    const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
     if(productosEnCarrito.some(producto => producto.id === idBoton)){
@@ -101,6 +107,7 @@ function agregarAlCarrito(e){
     localStorage.setItem("productos-en-carrito",JSON.stringify(productosEnCarrito));
 }
 
+//Se utiliza una funcion para actualizar el numero que indica mi carrito
 function actualizarNumerito(){
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
